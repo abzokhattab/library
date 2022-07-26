@@ -1,7 +1,7 @@
 
 # 📖 Library Project
 
-Create a simply application that allow users to rent a books.
+Create a simple application that allows users to rent books.
 
 ## 📚 Documentation
 
@@ -11,22 +11,22 @@ Create a simply application that allow users to rent a books.
 
 ## 🤨 What does it do ?
 
-We want to help librarian in their job by a technology 👩🏻‍💻.\
-Focus on a backend, we will not measure frontend side.
+We want to help librarians with their job using technology 👩🏻‍💻.\
+Focus on the backend, we will not measure the frontend side.
 
 **Features to do:**
 - Add a new book
-- Add an user
+- Add a user
 - Rent a book
 - Return a book
 - Show books that I have rented with a status ( user view )
 - Show all books with a status (library view)
-- Left instruction how to run tests and a short description about your solution.
+- Leave an instruction on how to run tests and a short description about your solution.
 
 **Additional but not required**
 - authorization
 - list of my books( after sign in)
-- If you want to be a fullstack you can show us the frontend skills but if you aim to backend don't do it.
+- If you want to be a fullstack you can show us the frontend skills but if you aim for backend don't do it.
 
 ## 🛠 Tech Stack
 
@@ -41,7 +41,7 @@ Focus on a backend, we will not measure frontend side.
 
 ## 🚨 Tests
 
-Create tests(Preferable Rspec) that will check accuracy of your code
+Create tests (Preferable Rspec) that will check the accuracy of your code
 
 ## ❓Problems
 Don't hesitate to reach us for help!
