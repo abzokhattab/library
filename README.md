@@ -1,7 +1,7 @@
 
 # 📖 Library Project
 
-Create a simple application that allow users to rent books.
+Create a simple application that allows users to rent books.
 
 ## 📚 Documentation
 
