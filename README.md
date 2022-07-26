@@ -28,6 +28,12 @@ Focus on the backend, we will not measure the frontend side.
 - list of my books( after sign in)
 - If you want to be a fullstack you can show us the frontend skills but if you aim for backend don't do it.
 
+**How to Share a project?**
+
+- Create a your own fork - [how to create a fork](https://www.earthdatascience.org/workshops/intro-version-control-git/about-forks/)
+- Create a Pull Request - [how to create a PR](https://www.earthdatascience.org/workshops/intro-version-control-git/pull-request/)
+- Mail us that you finish
+
 ## 🛠 Tech Stack
 
 - Ruby
