@@ -30,9 +30,11 @@ Focus on the backend, we will not measure the frontend side.
 
 **How to Share a project?**
 
-- Create a your own fork - [how to create a fork](https://www.earthdatascience.org/workshops/intro-version-control-git/about-forks/)
-- Create a Pull Request - [how to create a PR](https://www.earthdatascience.org/workshops/intro-version-control-git/pull-request/)
-- Mail us that you finish
+- Clone the repo [How to clone?](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository)
+- Set a repo as private [how to set private?](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/managing-repository-settings/setting-repository-visibility)
+- Publish your changes on the `main` branch
+- Get [us](https://github.com/MouseGlass) an access [How to get an access?](https://docs.github.com/en/account-and-profile/setting-up-and-managing-your-personal-account-on-github/managing-access-to-your-personal-repositories/inviting-collaborators-to-a-personal-repository)
+- Mail us when you finish
 
 ## 🛠 Tech Stack
 
@@ -43,7 +45,15 @@ Focus on the backend, we will not measure the frontend side.
 ## 💾 Local Setup
 ### 👮🏼‍️ Requirements:
 - [PostgreSQL v.14](https://www.postgresql.org/download/)
-- [ruby](https://rvm.io/) -  [current version](.ruby-version)
+- [Ruby](https://rvm.io/) -  [current version](.ruby-version)
+
+### 🛠 Installation
+- install ruby ☝️
+- install and configure PostgreSQL ☝️
+- install bundler `gem install bundler`
+- install gems `bundle install`
+- create db `rake db:setup`
+- check if that works `rails s`
 
 ## 🚨 Tests
 
