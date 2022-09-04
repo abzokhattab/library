@@ -1,3 +1,4 @@
+
 # 📖 Library Project
 
 Create a simple application that allows users to rent books.
@@ -10,7 +11,7 @@ Create a simple application that allows users to rent books.
 
 ## 🤨 What does it do ?
 
-We want to help librarians with their job using technology 👩🏻‍💻.\
+We want to help librarians with their job using technology 👩🏻‍💻.\  
 Focus on the backend, we will not measure the frontend side.
 
 **Features to do:**
@@ -31,12 +32,12 @@ Focus on the backend, we will not measure the frontend side.
 
 **How to Share a project?**
 
-- Clone the
+- Clone the  
   repo [How to clone?](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository)
-- Set a repo as
+- Set a repo as  
   private [how to set private?](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/managing-repository-settings/setting-repository-visibility)
 - Publish your changes on the `main` branch
-- Get [us](https://github.com/MouseGlass) an
+- Get [us](https://github.com/MouseGlass) an  
   access [How to get an access?](https://docs.github.com/en/account-and-profile/setting-up-and-managing-your-personal-account-on-github/managing-access-to-your-personal-repositories/inviting-collaborators-to-a-personal-repository)
 - Mail us when you finish
 
@@ -62,10 +63,11 @@ Focus on the backend, we will not measure the frontend side.
 - create db `rake db:setup`
 - check if that works `rails s`
 
-## 🚨 Tests
+### 🛠 How to run
 
-Create tests (Preferable Rspec) that will check the accuracy of your code
-
-## ❓Problems
-
-Don't hesitate to reach us for help!
+- install ruby ☝️
+- install and configure PostgreSQL ☝️
+- configure the database credentials found on `config/database.yml`
+- install gems `bundle install`
+- create and seed db`rake db:create db:migrate db:seed`
+- Run`rails s`  
