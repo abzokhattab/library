@@ -1,0 +1,51 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @bibliotheca %>
+<h1>Users</h1>
+
+<% @bibliotheca.users.each do |standard| %>
+  <p>
+    <strong>Email:</strong>
+    <%= standard.email %>
+  </p>
+<% end %>
+<br>
+
+<h1>Books</h1>
+
+<table>
+  <tr>
+    <th>ISBN &nbsp; &nbsp; &nbsp;</th>
+    <th>Title&nbsp; &nbsp; &nbsp;</th>
+    <th>Author&nbsp; &nbsp; &nbsp;</th>
+    <th>Status&nbsp; &nbsp; &nbsp;</th>
+    <th>Details&nbsp; &nbsp; &nbsp;</th>
+
+  </tr>
+
+
+
+  <% @bibliotheca.books.each do |book| %>
+    <tr>
+      <td><%= book.isbn %></td>
+      <td><%= book.title %></td>
+      <td><%= book.author %></td>
+      <td><%= book.status %></td>
+      <td>  <%= link_to "Show this book", book %></td>
+
+    </tr>
+  <% end %>
+
+</table>
+
+<br>
+<br>
+<br>
+
+
+<div>
+  <%= link_to "Edit this bibliotheca", edit_bibliotheca_path(@bibliotheca) %> |
+  <%= link_to "Back to bibliothecas", bibliothecas_path %>
+
+  <%= button_to "Destroy this bibliotheca", @bibliotheca, method: :delete %>
+</div>

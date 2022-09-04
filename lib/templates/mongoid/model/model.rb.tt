@@ -1,0 +1,27 @@
+<% module_namespacing do -%>
+<% modules = class_name.split(/v([0-9]::+)/i).last.split("::")[0...-1] -%>
+<% modules.each do |m| -%>
+module <%= m -%>
+<% end -%> 
+class <%= class_name.split("::").last %><%= " < #{options[:parent].classify}" if options[:parent] -%>
+
+<% unless options[:parent] -%>
+  include Mongoid::Document
+<% end -%>
+<% if options[:timestamps] -%>
+  include Mongoid::Timestamps
+<% end -%>
+<% if options[:collection] -%>
+  store_in collection: "<%= options[:collection] %>"
+<% end -%>
+<% attributes.reject{|attr| attr.reference?}.each do |attribute| -%>
+  field :<%= attribute.name %>, type: <%= attribute.type_class %>
+<% end -%>
+<% attributes.select{|attr| attr.reference? }.each do |attribute| -%>
+  embedded_in :<%= attribute.name%>
+<% end -%>
+end
+<% modules.each do |m| -%>
+end
+<% end -%>
+<% end -%>

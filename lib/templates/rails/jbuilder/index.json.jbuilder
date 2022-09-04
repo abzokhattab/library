@@ -1,0 +1,1 @@
+json.array! @ < %= file_name.pluralize %>, partial: "<%= file_name.pluralize %>/<%= file_name %> ", as: :<%= file_name %>

@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @book %>
+
+<div>
+
+  <% if @current_user.is_librarian? %>
+    <%= link_to "Edit this book", edit_book_path(@book) %> |
+  <% end %>
+  <%= button_to "Rent this book", rent_book_path(@book.id), method: :post %> |
+  <%= button_to "Return this book", return_book_path(@book.id), method: :post %> |
+
+  <%= link_to "Back to books", books_path %>
+</div>

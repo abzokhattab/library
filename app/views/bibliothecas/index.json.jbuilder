@@ -1,0 +1,1 @@
+json.array! @bibliothecas, partial: "bibliothecas/bibliotheca", as: :bibliotheca
